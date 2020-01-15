@@ -29,11 +29,11 @@ payload = {
             "type": "influxdb",
             "access": "proxy",
             "isDefault": True,
-            "password": "grafana",
-            "user": "grafana",
+            "password": "admin",
+            "user": "admin",
             "basicAuth": True,
-            "basicAuthUser": "grafana",
-            "basicAuthPassword": "grafana",
+            "basicAuthUser": "admin",
+            "basicAuthPassword": "admin",
             "jsonData": {
                             "keepCookies": []
                         },
@@ -140,7 +140,7 @@ payload =   {
                             ],
                             "measurement": "firewall_inspect_count",
                             "orderByTime": "ASC",
-                            "policy": "default",
+                            "policy": "firewall_stats_retention_policy",
                             "refId": "A",
                             "resultFormat": "time_series",
                             "select": [
@@ -257,7 +257,7 @@ payload =   {
                             "hide": False,
                             "measurement": "firewall_inspect_count",
                             "orderByTime": "ASC",
-                            "policy": "default",
+                            "policy": "firewall_stats_retention_policy",
                             "query": "SELECT * FROM \"firewall_inspect_count\" WHERE (\"host\" = '10.3.0.2') AND $timeFilter GROUP BY time($__interval) fill(none)",
                             "rawQuery": False,
                             "refId": "A",
@@ -380,7 +380,7 @@ payload =   {
                             ],
                             "measurement": "firewall_inspect_count",
                             "orderByTime": "ASC",
-                            "policy": "retention_policy_1",
+                            "policy": "firewall_stats_retention_policy",
                             "refId": "A",
                             "resultFormat": "time_series",
                             "select": [

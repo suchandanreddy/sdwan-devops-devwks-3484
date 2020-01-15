@@ -33,7 +33,7 @@ def alarms():
       print(data)
       CET = pytz.timezone('Europe/Madrid')
       
-      message =  'Team, Alarm Event : **' + data['rule_name_display'] + '**, **Message:**' + data['message'] + ', is recieved from vManage and here are the complete details<br>'
+      message =  'Team, **Alarm Event** : ' + data['rule_name_display'] + ', **Message** : ' + data['message'] + ', is recieved from vManage and here are the complete details<br>'
       
       temp_time = datetime.datetime.utcfromtimestamp(data['receive_time']/1000.)
       temp_time = pytz.UTC.localize(temp_time)

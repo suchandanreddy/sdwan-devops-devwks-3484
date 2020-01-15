@@ -15,10 +15,10 @@ headers = {
 
 response = requests.request("POST", url, data=json.dumps(payload), headers=headers)
 
-print(response.text)
+#print(response.text)
 
 if response.status_code == 200:
-    api_key = response.json()["key"]
+    print("\nCreated API key")
 else:
     exit()
     
@@ -54,12 +54,11 @@ headers = {
 
 response = requests.request("POST", url, data=json.dumps(payload), headers=headers)
 
-print(response.text)
+#print(response.text)
 
 
 if response.status_code == 200:
-    print("Added datasources")
-    print(response.json())
+    print("Added InfluxDB as a datasource")
 else:
     exit()
 
@@ -500,10 +499,10 @@ headers = {
 
 response = requests.request("POST", url, data=json.dumps(payload), headers=headers)
 
-print(response.text)
+#print(response.text)
 
 if response.status_code == 200:
-    print("Added dashboards")
-    print(response.json())
+    print("Added vManage dashboards")
+    #print(response.json())
 else:
     exit()

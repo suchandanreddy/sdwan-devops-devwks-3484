@@ -18,8 +18,10 @@ response = requests.request("POST", url, data=json.dumps(payload), headers=heade
 #print(response.text)
 
 if response.status_code == 200:
+    api_key = response.json()["key"]
     print("\nCreated API key")
 else:
+    print("Failed to create API key")
     exit()
     
 url = "http://localhost:3000/api/datasources"
@@ -60,6 +62,7 @@ response = requests.request("POST", url, data=json.dumps(payload), headers=heade
 if response.status_code == 200:
     print("Added InfluxDB as a datasource")
 else:
+    print("Failed to add datasource")
     exit()
 
 url = "http://localhost:3000/api/dashboards/import"
@@ -505,4 +508,5 @@ if response.status_code == 200:
     print("Added vManage dashboards")
     #print(response.json())
 else:
+    print("Failed to add dashboards")
     exit()

@@ -4,7 +4,7 @@ __pycache__/
 .vscode/
 *$py.class
 notebooks/.DS_Store
-vpn_details.csv
+vpn_details
 
 # C extensions
 *.so

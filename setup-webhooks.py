@@ -62,7 +62,7 @@ if __name__ == "__main__":
                                 "enabled": True,
                                 "from_address": "test@test.com",
                                 "protocol": "smtp",
-                                "smtp_server": "test.gmail.com",
+                                "smtp_server": "test.mail.com",
                                 "smtp_port": 25,
                                 "reply_to_address": "test@test.com",
                                 "notification_use_smtp_authentication": False
@@ -75,6 +75,6 @@ if __name__ == "__main__":
         else:
             print("\nFailed to enable email notifications")
             exit()
-            
+
     except Exception as e:
         print(e)

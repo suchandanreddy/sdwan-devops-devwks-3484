@@ -5,6 +5,7 @@ __pycache__/
 *$py.class
 notebooks/.DS_Store
 vpn_details
+.DS_Store
 
 # C extensions
 *.so

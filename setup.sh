@@ -1,16 +1,17 @@
 #!/bin/bash
 
-while read f1 f2 f3
+while read f1 f2 f3 f4
 do
         echo "Pod name     : $f1"
-        Username=$f2
-        Password=$f3
+        Anyconnect=$f2
+        Username=$f3
+        Password=$f4
 done < vpn_details
 
 echo "Connecting to dcloud enivornment"
 
 /usr/bin/expect << EOF
-spawn /opt/cisco/anyconnect/bin/vpn connect dcloud-rtp-anyconnect.cisco.com
+spawn /opt/cisco/anyconnect/bin/vpn connect $Anyconnect
 expect {
     "Username:*" {
     	sleep 1

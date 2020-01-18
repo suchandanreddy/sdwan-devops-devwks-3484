@@ -151,7 +151,40 @@ C:\Users\Administrator\Desktop>python webhook.py
 Sample JSON output on webhook server on receiving notifications from vManage.
 
 <pre>
-{u'entry_time': 1579323422000L, u'severity': u'Critical', u'rule_name_display': u'System_Reboot_Issued', u'severity_number': 1, u'component': u'System', u'values_short_display': [{u'host-name': u'DC1-VEDGE1', u'system-ip': u'10.1.0.1'}], u'devices': [{u'system-ip': u'10.1.0.1'}], u'eventname': u'system-reboot-issued', u'receive_time': 1579323421121L, u'statcycletime': 1579323422000L, u'values': [{u'host-name': u'DC1-VEDGE1', u'reboot-reason': u'Initiated by user', u'system-ip': u'10.1.0.1'}], u'rulename': u'system-reboot-issued', u'active': True, u'message': u'The device rebooted', u'type': u'system-reboot-issued', u'acknowledged': False, u'uuid': u'226bd188-35e8-450f-b40b-b0c5f279f562'}
+{
+    u'entry_time':  1579323422000L,
+     u'severity':  u'Critical',
+     u'rule_name_display':  u'System_Reboot_Issued',
+     u'severity_number':  1,
+     u'component':  u'System',
+     u'values_short_display':  [
+        {
+             u'host-name':  u'DC1-VEDGE1',
+             u'system-ip':  u'10.1.0.1'
+        }
+    ],
+     u'devices':  [
+        {
+            u'system-ip':  u'10.1.0.1'
+        }
+    ],
+     u'eventname':  u'system-reboot-issued',
+     u'receive_time':  1579323421121L,
+     u'statcycletime':  1579323422000L,
+     u'values':  [
+        {
+             u'host-name':  u'DC1-VEDGE1',
+             u'reboot-reason':  u'Initiated by user',
+             u'system-ip':  u'10.1.0.1'
+        }
+    ],
+     u'rulename':  u'system-reboot-issued',
+     u'active':  True,
+     u'message':  u'The device rebooted',
+     u'type':  u'system-reboot-issued',
+     u'acknowledged':  False,
+     u'uuid':  u'226bd188-35e8-450f-b40b-b0c5f279f562'
+}
 </pre>
 
 # Alarms on vManage

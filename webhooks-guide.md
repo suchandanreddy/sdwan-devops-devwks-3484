@@ -152,7 +152,7 @@ Sample JSON output on webhook server on receiving notifications from vManage.
 
 <pre>
 {
-    u'entry_time':  1579323422000L,
+     u'entry_time':  1579323422000L,
      u'severity':  u'Critical',
      u'rule_name_display':  u'System_Reboot_Issued',
      u'severity_number':  1,

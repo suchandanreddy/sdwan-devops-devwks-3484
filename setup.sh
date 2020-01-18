@@ -74,4 +74,4 @@ python3 setup-webhooks.py
 
 open "https://198.18.1.10/"
 
-open "https://github.com/suchandanreddy/sdwan-webhooks"
+open "https://github.com/suchandanreddy/sdwan-devops-devwks-3484/blob/master/webhooks-guide.md"

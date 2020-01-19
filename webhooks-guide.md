@@ -55,7 +55,7 @@ Steps to enable webhook notifications to push alarm details to external systems.
 
 #	Notifications Dashboard 
 
-List of webhooks or email notifications configured can be seen in section **Alarms > Email Notifications**
+List of Notifications rules configured can be seen in section **Alarms > Email Notifications**
 
 ![webhook](images/step6.png)
 
@@ -131,22 +131,34 @@ if __name__ == '__main__':
    app.run(host='0.0.0.0', port=5001, debug=True)
 ```
 
+**Step-1:**
+
+- Launch **Command Prompt** from Windows VM Desktop using below shortcut
+
+![](images/command-prompt.png)
+
+**Step-2:**
+
+- Run command **cd Desktop** and **python webhook.py** to start the webserver.
+
+![](images/commands.png)
+
+**Step-3:**
+
+- Lauch **MTPuTTY** from Windows VM Desktop using below shortcut
+
+![](images/mtputty.png)
+
+**Step-4:**
+
+- Select **DC1-VEDGE1** router from side tab on MTPuTTY
+- Login password for DC1-VEDGE1 is **admin**
+- Run command **reboot now** on DC1-VEDGE1 router SSH session to trigger 
+webhook notification
+
+![](images/dc1vedge1.png)
+
 ## Logs from Webhook Server
-
-Spin up HTTP webhook server on Windows VM
-
-```
-C:\Users\Administrator\Desktop>python webhook.py
- * Serving Flask app "webhook" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 310-352-211
- * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
-```
 
 Sample JSON output on webhook server on receiving notifications from vManage.
 
@@ -209,7 +221,7 @@ Sample JSON output on webhook server on receiving notifications from vManage.
 
 # Reference
 
-<b>This setting is already enabled in our lab setup</b>
+<b>This setting is enabled in our lab setup during initialisation</b>
 
 - Enable **Email Notifications** option in Administration settings of vManage.
 

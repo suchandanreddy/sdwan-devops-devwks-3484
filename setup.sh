@@ -2,7 +2,7 @@
 
 while read f1 f2 f3 f4
 do
-        echo "Pod name     : $f1"
+        Podname=$f1
         Anyconnect=$f2
         Username=$f3
         Password=$f4
@@ -71,6 +71,8 @@ echo "Setting up grafana"
 python3 grafana-setup.py
 
 python3 setup-webhooks.py
+
+python3 DCvedge-hostname-change.py $Podname
 
 open "https://198.18.1.10/"
 

@@ -31,7 +31,7 @@ cd sdwan-devops-devwks-3484
 
 - **setup.sh** script prompts to login for Remote Desktop session to lab Jumphost. This VM has access to all network devices and we will run our python script for webhook use case on this VM.  
 
-- Click **Continue** when prompted with an invalid certificate warning:
+- Click **Continue** when prompted with an invalid certificate warning.
 
 ![](images/windows-RDP.png)
 

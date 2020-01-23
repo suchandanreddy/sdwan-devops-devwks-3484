@@ -6,6 +6,7 @@ __pycache__/
 notebooks/.DS_Store
 vpn_details
 .DS_Store
+Windows-VM-Setup.txt
 
 # C extensions
 *.so

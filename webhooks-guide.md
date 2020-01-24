@@ -44,10 +44,9 @@ Steps to enable webhook notifications to push alarm details to external systems.
 
 - Enable webhook checkbox.
 - Provide the webhook server URL, username and password. 
-
-- Webhook Server URL : http://198.18.133.36:5001/
 - Username : **cleur**
 - Password : **cleur**
+- Webhook Server URL : http://198.18.133.36:5001/
 
 - Select **All Devices** and click on **Add** to complete the webhook settings.
 
@@ -145,7 +144,7 @@ if __name__ == '__main__':
 
 **Step-3:**
 
-- Lauch **MTPuTTY** from Windows VM Desktop using below shortcut
+- Launch **MTPuTTY** from Windows VM Desktop using below shortcut
 
 ![](images/mtputty.png)
 

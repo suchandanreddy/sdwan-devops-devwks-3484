@@ -23,7 +23,7 @@ Steps to enable webhook notifications to push alarm details to external systems.
 
 **Step-3:**
 
-- Enter name of the webhook : <b>cleur-webhooks</b>
+- Enter Notification rule name : <b>cleur-webhooks</b>
 - Select severity level : <b>Critical</b>
 - Select Alarm Name : <b>System Reboot Issued</b>
 

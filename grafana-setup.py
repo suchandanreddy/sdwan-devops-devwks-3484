@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "http://localhost:3000/api/auth/keys"
+url = "http://localhost:3111/api/auth/keys"
 
 payload =  { 
              "name": "APIkeysetup",  
@@ -24,7 +24,7 @@ else:
     print("Failed to create API key")
     exit()
     
-url = "http://localhost:3000/api/datasources"
+url = "http://localhost:3111/api/datasources"
 
 payload = {
             "name": "InfluxDB",
@@ -65,7 +65,7 @@ else:
     print("Failed to add datasource")
     exit()
 
-url = "http://localhost:3000/api/dashboards/import"
+url = "http://localhost:3111/api/dashboards/import"
 
 payload =   {
                 "dashboard": {

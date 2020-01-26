@@ -51,7 +51,7 @@ echo "Creating docker image for ubuntu container and install InfluxDB, Grafana"
 
 docker build -t grafana_influxdb .
 
-docker run -d -p 3000:3000 -p 8086:8086 --name grafana-influxdb_container grafana_influxdb
+docker run -d -p 3111:3000 -p 8111:8086 --name grafana-influxdb_container grafana_influxdb
 
 echo "Starting jupyter notebook"
 

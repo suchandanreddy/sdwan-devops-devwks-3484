@@ -2,11 +2,11 @@
 
 echo "Setting up Python Virtual Environment"
 
-python3 -m venv venv
+sudo python3 -m venv venv
 
-source venv/bin/activate
+sudo source venv/bin/activate
 
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 
 
 echo "Creating docker image for ubuntu container and install InfluxDB, Grafana"
@@ -21,16 +21,12 @@ jupyter-notebook "notebooks/Enterprise Firewall Statistics.ipynb" &
 
 /bin/sleep 10
 
-open http://localhost:3000/
-
 echo "Setting up grafana"
 
 python3 grafana-setup.py
 
 python3 setup-webhooks.py
 
-python3 DCvedge-hostname-change.py $Podname
+python3 DCvedge-hostname-change.py POD2
 
-open "https://198.18.1.10/"
-
-open "https://github.com/suchandanreddy/sdwan-devops-devwks-3484/blob/master/webhooks-guide.md"
+google-chrome http://localhost:3000/ https://198.18.1.10/ https://github.com/suchandanreddy/sdwan-devops-devwks-3484/blob/master/webhooks-guide.md

@@ -35,10 +35,10 @@ def alarms():
       
       message =  'Team, **Alarm Event** : ' + data['rule_name_display'] + ', **Message** : ' + data['message'] + ', is recieved from vManage and here are the complete details<br>'
       
-      temp_time = datetime.datetime.utcfromtimestamp(data['receive_time']/1000.)
+      temp_time = datetime.datetime.utcfromtimestamp(data['entry_time']/1000.)
       temp_time = pytz.UTC.localize(temp_time)
 
-      message = message + '**Receive Time:** ' + temp_time.astimezone(CET).strftime('%c') + ' CET'
+      message = message + '**Alarm Date & Time:** ' + temp_time.astimezone(CET).strftime('%c') + ' CET'
 
       temp = data['values_short_display']
 
